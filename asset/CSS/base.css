@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font: "Roboto", sans-serif;
+    --color-primary: #00AA5B;
+    --color-body: #171717;
+    --color-desc: #98A2B3;
+    --color-btn-disable: #E4E7EC;
+    --color-btn-hover: #aaacaf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font);
+    line-height: 1.5;
+    color: var(--color-body);
+    text-align: left;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+    color: var(--color-body);
+}
+
+body a:hover {
+    text-decoration: none;
+    color: var(--color-body);
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    padding: 0;
+}
