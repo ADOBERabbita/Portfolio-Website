@@ -953,8 +953,8 @@
     height: 86px;
     padding-left: 90px;
 }
-.discuss input:focus-visible {
-    border-color: #00AA5B;
+.discuss input[type=email]:focus {
+    border: 2px solid red;
 }
 .discuss button {
     padding: 20px 40px;
@@ -1005,11 +1005,8 @@
     height: 300px;
     background-color: #00aa5b3a;
     border-radius: 20px;
-}
-.blog img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
 }
 .blog .tag {
     background-color: #F2F4F7;
@@ -1019,6 +1016,7 @@
     align-items: center;
     text-align: center;
     margin-top: 12px;
+    transition: 0.5s;
 }
 .blog .cardOne {
     background-image: url(../images/blog1.jpeg);
@@ -1141,8 +1139,7 @@
 }
 ul {
     list-style: none;
-  }
-  
+}
 .example-1 {
 display: flex;
 justify-content: center;
