@@ -33,7 +33,7 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <nav class="main-nav">
+                <nav class="main-nav" style="position: relative;">
                     <ul>
                         <li style="background-color: #00AA5B; margin-left: 10px; font-weight: bold;"><a
                                 href="./index.html">Home</a></li>
@@ -51,8 +51,12 @@
                     <ul>
                         <li><a href="./resume.html">Resume</a></li>
                         <li><a href="./project.html">Project</a></li>
-                        <li style="margin-right: 10px;"><a href="./contact.html">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
+                    <div class="inner-icon-mobi">
+                        <i class="fa-solid fa-bars" style="color: white; font-size: 26px; position: absolute;
+                        top: 33px; right: 30px;"></i>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -66,8 +70,7 @@
                 <div class="col-12">
                     <div class="helloText" style="position: relative;">
                         <div class="text">Hello!</div>
-                        <img id="img-01" src="./asset/images/Vector 1.png"
-                            alt="">
+                        <img id="img-01" src="./asset/images/Vector 1.png" alt="">
                     </div>
                     <div class="textLineOne">
                         <div class="iAm">I'm <span style="color: #00AA5B;">Rabbita</span>,</div>
@@ -75,7 +78,7 @@
                     <div class="textLineTwo" style="position: relative;">
                         <img src="./asset/images/Vector 2.png" alt="">
                         <div class="iAm" style="position: relative;">Product Designer
-                            <div class="spinner" style="position: absolute; top: 35px; left: 98px; z-index: -990;">
+                            <div class="spinner">
                                 <div class="spinnerin"></div>
                             </div>
                         </div>
@@ -111,12 +114,11 @@
                     </div>
                 </div>
                 <div class="intro" style="display: flex; margin-top: -65px; width: 100%;">
-                    <div class="col-3" style="margin-top: 150px; text-align: start; padding: 0;">
+                    <div class="col-3" style="margin-top: 100px; text-align: start; padding: 0;">
                         <div class="innerIcon" style="font-size: 40px;">
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
-                        <div class="innerContent"
-                            style="line-height: 24px; width: 328px; font-size: 20px; margin-top: -10px;">There are three
+                        <div class="innerContent">There are three
                             responses to a piece of design - yes, no, and WOW! Wow is the one to aim for.</div>
                     </div>
                     <div class="col-6" style="margin-top: -20px;">
@@ -124,8 +126,8 @@
                             <img src="./asset/images/quangthoaa.png" alt="" style="height: 636px; width: auto;">
                         </div>
                     </div>
-                    <div class="col-3" style="margin-top: 150px; text-align: end; padding: 0;">
-                        <div class="innerStar" style="color: var(--color-primary); font-size: 24px;">
+                    <div class="col-3" style="margin-top: 100px; text-align: end; padding: 0;">
+                        <div class="innerStar">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -133,8 +135,8 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="innerText" style="font-size: 20px; display: flex; flex-direction: column;">
-                            <span style="font-size: 47px; font-weight: 700;">3 Years</span>
-                            <span style="font-size: 20px; margin-top: -15px;">Experience</span>
+                            <span class="span1">3 Years</span>
+                            <span class="span2">Experience</span>
                         </div>
                     </div>
                 </div>
@@ -152,15 +154,20 @@
                     <div class="col-6 innerContent">You can refer to my design services! <br> Select it and see more
                         details about the service of your choice.</div>
                 </div>
-                <div class="serviceBox" style="margin-left: 71px; margin-right: 71px;">
-                    <div class="col-4">
-                        <div class="innerService">Service1</div>
-                    </div>
-                    <div class="col-4" style="display: flex; justify-content: center;">
-                        <div class="innerService">Service2</div>
-                    </div>
-                    <div class="col-4" style="display: flex; justify-content: end;">
-                        <div class="innerService">Service3</div>
+                <div class="row">
+                    <div class="inner-wrap">
+                        <a href="./service.html" class="inner-box">
+                            <div class="title">UI/UX Design</div>
+                            <img src="./asset/images/service1.jpg" alt="">
+                        </a>
+                        <a href="./service.html" class="inner-box">
+                            <div class="title">Web Design</div>
+                            <img src="./asset/images/service2.jpg" alt="">
+                        </a>
+                        <a href="./service.html" class="inner-box">
+                            <div class="title">Landing Page</div>
+                            <img src="./asset/images/service3.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -173,12 +180,14 @@
         <div class="container">
             <div class="col-12">
                 <div class="title">
-                    My <span style="color: transparent;">Work Exprience</span><span style="color: var(--color-primary);"><div class="loader">
+                    My <span style="color: transparent;">Work Exprience</span><span
+                        style="color: var(--color-primary);">
                         <div class="loader">
-                            <span style="letter-spacing: 0;">Work Exprience</span>
-                            <span style="letter-spacing: 0;">Work Exprience</span>
+                            <div class="loader">
+                                <span style="letter-spacing: 0;">Work Exprience</span>
+                                <span style="letter-spacing: 0;">Work Exprience</span>
+                            </div>
                         </div>
-                     </div>
 
                     </span>
                 </div>
@@ -223,15 +232,18 @@
                 <div class="col-5">
                     <div class="content contentTwo">
                         <div class="innerContent">Culture and Media group</div>
-                        <div class="innerDesc">Research, develop ideas, and design for events inside and outside the club. Take photos and videos at large and small events.</div>
+                        <div class="innerDesc">Research, develop ideas, and design for events inside and outside the
+                            club. Take photos and videos at large and small events.</div>
                     </div>
                     <div class="content contentTwo">
                         <div class="innerContent">Intern Designer</div>
-                        <div class="innerDesc">Create product mockups, participate in building and developing mockups. Support to increase productivity and optimize product design.</div>
+                        <div class="innerDesc">Create product mockups, participate in building and developing mockups.
+                            Support to increase productivity and optimize product design.</div>
                     </div>
                     <div class="content contentTwo">
                         <div class="innerContent">Leader of Design</div>
-                        <div class="innerDesc">Come up with design ideas for the product, work directly with the code team. Develop and optimize product design.</div>
+                        <div class="innerDesc">Come up with design ideas for the product, work directly with the code
+                            team. Develop and optimize product design.</div>
                     </div>
                 </div>
             </div>
@@ -245,7 +257,8 @@
             <div class="col-6" style="display: flex; align-items: center; justify-content: end;">
                 <div class="content">
                     <div class="innerContent">Why <span style="color: var(--color-primary);">Hire me</span>?</div>
-                    <div class="innerDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia nemo cum dolorem veniam quo animi culpa suscipit quidem!</div>
+                    <div class="innerDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia nemo
+                        cum dolorem veniam quo animi culpa suscipit quidem!</div>
                     <div class="innerInfo">
                         <div class="info infoOne">
                             <div class="number">450+</div>
@@ -256,7 +269,7 @@
                             <div class="text">Project Completed</div>
                         </div>
                     </div>
-                    <div class="btnHire">Hire me</div>
+                    <a href="./contact.html" class="btnHire">Hire me</a>
                 </div>
             </div>
             <div class="col-6">
@@ -268,7 +281,7 @@
         </div>
     </div>
     <!-- End Hire me -->
- 
+
     <!-- Portfolio -->
     <div class="portfolio">
         <div class="container">
@@ -279,33 +292,36 @@
                     </div>
                 </div>
                 <div class="col-2" style="display: flex; justify-content: end;">
-                    <a href="#" class="btnFill" style="text-align: center; margin-right: 71px;">
+                    <a href="./project.html" class="btnFill" style="text-align: center; margin-right: 71px;">
                         See All
                     </a>
                 </div>
             </div>
             <div class="col-12" style="display: flex;">
                 <div class="col-6" style="padding-top: 48px;">
-                    <a href="#" class="card" style="margin-left: 71px;">
+                    <a href="./project.html" class="card" style="margin-left: 71px;">
                         <div class="innerTitle">
                             <div class="text textOne">
                                 At School
                             </div>
                             <div class="desc">
-                                Exercises and projects are carried out at school. Under the guidance of lecturers at FPT University - Hanoi.
+                                Exercises and projects are carried out at school. Under the guidance of lecturers at FPT
+                                University - Hanoi.
                             </div>
                         </div>
                         <div class="btnOutline btnOne"><i class="fa-solid fa-arrow-right"></i></div>
                     </a>
                 </div>
                 <div class="col-6" style="display: flex; justify-content: end; padding-top: 48px;">
-                    <a href="#" class="card" style="margin-right: 71px; background-image: url(./asset/images/cadie\'s\ beauty\ shop.png);">
+                    <a href="./project.html" class="card"
+                        style="margin-right: 71px; background-image: url(./asset/images/cadie\'s\ beauty\ shop.png);">
                         <div class="innerTitle">
                             <div class="text textTwo">
                                 My Works
                             </div>
                             <div class="desc">
-                                Projects carried out outside to perfect and enhance one's own capabilities: company projects, personal projects, freelance projects,...
+                                Projects carried out outside to perfect and enhance one's own capabilities: company
+                                projects, personal projects, freelance projects,...
                             </div>
                         </div>
                         <div class="btnOutline btnTwo"><i class="fa-solid fa-arrow-right"></i></div>
@@ -334,7 +350,9 @@
                     <div class="innerTitle">Lirante - Food Dilvery Solution</div>
                     <a href="#" class="btnFill"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="innerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</div>
+                <div class="innerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum
+                    ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci
+                    elementum egestas lobortis.</div>
             </div>
         </div>
     </div>
@@ -345,105 +363,123 @@
         <div class="container" style="padding: 116px 71px;">
             <div class="row">
                 <div class="col-4"></div>
-                <div class="col-4" style="position: relative;; text-align: center; font-size: 48px; font-weight: 500; line-height: 50px;">
+                <div class="col-4"
+                    style="position: relative;; text-align: center; font-size: 48px; font-weight: 500; line-height: 50px;">
                     Testimonials That Speak to <span style="color: var(--color-primary);">My Results</span>
-                    <img style="position: absolute; width: 28px; height: auto; top: -20px; right: 10px;" src="./asset/images/Vector 3.png" alt="">
+                    <img style="position: absolute; width: 28px; height: auto; top: -20px; right: 10px;"
+                        src="./asset/images/Vector 3.png" alt="">
                 </div>
                 <div class="col-4"></div>
             </div>
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6" style="position: relative;; text-align: center; font-size: 20px; padding-top: 14px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
-                    <img style="position: absolute; width: 26px; height: auto; top: -10px; right: -50px;" src="./asset/images/sao1.png" alt="">
-                    <img style="position: absolute; width: 26px; height: auto; bottom: -20px; left: -40px;" src="./asset/images/sao2.png" alt="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                    lobortis.
+                    <img style="position: absolute; width: 26px; height: auto; top: -10px; right: -50px;"
+                        src="./asset/images/sao1.png" alt="">
+                    <img style="position: absolute; width: 26px; height: auto; bottom: -20px; left: -40px;"
+                        src="./asset/images/sao2.png" alt="">
                 </div>
                 <div class="col-3"></div>
             </div>
             <div class="row mt-5">
                 <div class="col-12">
-                  <div class="product-list">
-                    <div class="product-item">
-                        <div class="cardComment" style="margin: 0 12px;">
-                            <div class="row" style="padding: 0 21px;">
-                                <div><img src="./asset/images/nguyenquangthoa.jpg" alt=""></div>
-                                <div style="margin-top: auto; margin-bottom: auto; padding-left: 12px;">
-                                    <div style="font-weight: bold; font-size: 22px;">Quang Thoa Nguyen</div>
-                                    <div>CEO.SAM</div>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <div class="cardComment" style="margin: 0 12px;">
+                                <div class="row" style="padding: 0 21px;">
+                                    <div><img src="./asset/images/nguyenquangthoa.jpg" alt=""></div>
+                                    <div style="margin-top: auto; margin-bottom: auto; padding-left: 12px;">
+                                        <div style="font-weight: bold; font-size: 22px;">Quang Thoa Nguyen</div>
+                                        <div>CEO.SAM</div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding: 14px 21px;">
+                                    <div class="rate"
+                                        style="font-size: 25px; padding-right: 5px; color: var(--color-primary);">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="numberRate" style="font-size: 25px;">5.0</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 20px; padding: 0 21px;">
+                                        consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                                        lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                                        elementum egestas lobortis.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row" style="padding: 14px 21px;">
-                                <div class="rate" style="font-size: 25px; padding-right: 5px; color: var(--color-primary);">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="product-item">
+                            <div class="cardComment" style="margin: 0 12px;">
+                                <div class="row" style="padding: 0 21px;">
+                                    <div><img src="./asset/images/nguyenquangthoa.jpg" alt=""></div>
+                                    <div style="margin-top: auto; margin-bottom: auto; padding-left: 12px;">
+                                        <div style="font-weight: bold; font-size: 22px;">Quang Thoa Nguyen</div>
+                                        <div>CEO.SAM</div>
+                                    </div>
                                 </div>
-                                <div class="numberRate" style="font-size: 25px;">5.0</div>
+                                <div class="row" style="padding: 14px 21px;">
+                                    <div class="rate"
+                                        style="font-size: 25px; padding-right: 5px; color: var(--color-primary);">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="numberRate" style="font-size: 25px;">5.0</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 20px; padding: 0 21px;">
+                                        consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                                        lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                                        elementum egestas lobortis.
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <div style="font-size: 20px; padding: 0 21px;">
-                                    consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.
+                        </div>
+                        <div class="product-item">
+                            <div class="cardComment" style="margin: 0 12px;">
+                                <div class="row" style="padding: 0 21px;">
+                                    <div><img src="./asset/images/nguyenquangthoa.jpg" alt=""></div>
+                                    <div style="margin-top: auto; margin-bottom: auto; padding-left: 12px;">
+                                        <div style="font-weight: bold; font-size: 22px;">Quang Thoa Nguyen</div>
+                                        <div>CEO.SAM</div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding: 14px 21px;">
+                                    <div class="rate"
+                                        style="font-size: 25px; padding-right: 5px; color: var(--color-primary);">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="numberRate" style="font-size: 25px;">5.0</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 20px; padding: 0 21px;">
+                                        consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                                        lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+                                        elementum egestas lobortis.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <div class="cardComment" style="margin: 0 12px;">
-                            <div class="row" style="padding: 0 21px;">
-                                <div><img src="./asset/images/nguyenquangthoa.jpg" alt=""></div>
-                                <div style="margin-top: auto; margin-bottom: auto; padding-left: 12px;">
-                                    <div style="font-weight: bold; font-size: 22px;">Quang Thoa Nguyen</div>
-                                    <div>CEO.SAM</div>
-                                </div>
-                            </div>
-                            <div class="row" style="padding: 14px 21px;">
-                                <div class="rate" style="font-size: 25px; padding-right: 5px; color: var(--color-primary);">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="numberRate" style="font-size: 25px;">5.0</div>
-                            </div>
-                            <div>
-                                <div style="font-size: 20px; padding: 0 21px;">
-                                    consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="cardComment" style="margin: 0 12px;">
-                            <div class="row" style="padding: 0 21px;">
-                                <div><img src="./asset/images/nguyenquangthoa.jpg" alt=""></div>
-                                <div style="margin-top: auto; margin-bottom: auto; padding-left: 12px;">
-                                    <div style="font-weight: bold; font-size: 22px;">Quang Thoa Nguyen</div>
-                                    <div>CEO.SAM</div>
-                                </div>
-                            </div>
-                            <div class="row" style="padding: 14px 21px;">
-                                <div class="rate" style="font-size: 25px; padding-right: 5px; color: var(--color-primary);">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="numberRate" style="font-size: 25px;">5.0</div>
-                            </div>
-                            <div>
-                                <div style="font-size: 20px; padding: 0 21px;">
-                                    consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     <!-- End Results -->
@@ -459,7 +495,8 @@
                 <div class="col-3"></div>
             </div>
             <div class="row">
-                <div class="col-12" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+                <div class="col-12"
+                    style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
                     <form action="" style="position: relative;">
                         <div class="iconMail" style="position: absolute; width: 64px; height: 64px;">
                             <i style="font-size: 26px;" class="fa-solid fa-envelope"></i>
@@ -496,9 +533,11 @@
     <!-- End Discuss -->
 
     <!-- Decorate -->
-    <div class="decorate" style="border-radius: 20px 0 20px 0; height: 150px; font-size: 47px; font-weight: 500; background-color: var(--color-primary); display: flex; justify-content: center; align-items: center;">
+    <div class="decorate"
+        style="border-radius: 20px 0 20px 0; height: 150px; font-size: 47px; font-weight: 500; background-color: var(--color-primary); display: flex; justify-content: center; align-items: center;">
         <div class="row">
-            <div style="width: 1550px;; background-color: white; rotate: -2deg; display: flex; justify-content: center; align-items: center;">
+            <div
+                style="width: 1550px;; background-color: white; rotate: -2deg; display: flex; justify-content: center; align-items: center;">
                 UX Design
                 <i class="fa-brands fa-pagelines" style="margin: 0 20px; color: var(--color-primary);"></i>
                 App Design
@@ -518,91 +557,117 @@
         <div class="container" style="padding: 97px 71px;">
             <div class="row">
                 <div class="col-12" style="display: flex;">
-                    <div class="col-2" style="font-size: 48px; font-weight: 500; line-height: 50px;">From my blog post</div>
+                    <div class="col-2" style="font-size: 48px; font-weight: 500; line-height: 50px;">From my blog post
+                    </div>
                     <div class="col-8"></div>
                     <div class="col-2" style="display: flex; justify-content: end; align-items: center;">
-                        <a href="https://www.facebook.com/rabbita1112/" target="_blank">
+                        <a id="btn" href="https://www.facebook.com/rabbita1112/" target="_blank">
                             See all
                         </a>
                     </div>
                 </div>
                 <div class="col-12" style="margin-top: 48px; display: flex;">
-                    <div class="box col-3" style="padding: 0 10px;">
-                        <div class="card" style="background-image: url(./asset/images/blog1.jpeg); background-size: cover;"></div>
-                        <div class="tag col-6">UI/UX Design</div>
+                    <a href="https://www.facebook.com/rabbita1112/posts/pfbid02WRcovEvHfJ6GhFJ7kL63DGwiTHW1L7vGTLMLjyNwt8FBjEvJcaKv9Xrz62nycXc6l"
+                        target="_blank" class="box col-3"
+                        style="padding: 10px 10px; padding-bottom: 20px; border-radius: 30px;">
+                        <div class="card"
+                            style="background-image: url(./asset/images/blog1.png); background-size: cover;"></div>
+                        <div class="tag col-6">Photograph</div>
                         <div class="time" style="margin-top: 12px; display: flex;">
                             <div class="innerName" style="display: flex; margin-right: 35px;">
-                                <div class="icon" style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
                                 <div class="innerText" style="font-size: 16px;">Rabbita</div>
                             </div>
                             <div class="innerTime" style="display: flex;">
-                                <div class="icon" style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
-                                <div class="textText" style="font-size: 16px;">10 Nov, 2023</div>
+                                <div class="textText" style="font-size: 16px;">April 4, 2023</div>
                             </div>
                         </div>
-                        <div class="desc" style="margin-top: 12px; font-size: 24px;">Design Unraveled: Behind the Scenes of UI/UX Magic</div>
-                    </div>
-                    <div class="box col-3" style="padding: 0 10px;">
-                        <div class="card" style="background-image: url(./asset/images/blog2.png); background-size: cover;"></div>
-                        <div class="tag col-6">UI/UX Design</div>
+                        <div class="desc" style="margin-top: 12px; font-size: 20px;">"Achieve" <br>
+                            Dong Mo, Son Tay, Hanoi</div>
+                    </a>
+                    <a href="https://www.facebook.com/rabbita1112/posts/pfbid02SfxmzKjTRR2VhNdYd45cB1ENzhD3J7XmJQKDBDgvSGpVwF3KBv2pRcW8AL12puEql"
+                        target="_blank" class="box col-3"
+                        style="padding: 10px 10px; padding-bottom: 20px; border-radius: 30px;">
+                        <div class="card"
+                            style="background-image: url(./asset/images/blog2.png); background-size: cover;"></div>
+                        <div class="tag col-6">Photograph</div>
                         <div class="time" style="margin-top: 12px; display: flex;">
                             <div class="innerName" style="display: flex; margin-right: 35px;">
-                                <div class="icon" style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
                                 <div class="innerText" style="font-size: 16px;">Rabbita</div>
                             </div>
                             <div class="innerTime" style="display: flex;">
-                                <div class="icon" style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
-                                <div class="textText" style="font-size: 16px;">10 Nov, 2023</div>
+                                <div class="textText" style="font-size: 16px;">March 11, 2023</div>
                             </div>
                         </div>
-                        <div class="desc" style="margin-top: 12px; font-size: 24px;">Design Unraveled: Behind the Scenes of UI/UX Magic</div>
-                    </div>
-                    <div class="box col-3" style="padding: 0 10px;">
-                        <div class="card" style="background-image: url(./asset/images/blog3.jpg); background-size: cover;"></div>
-                        <div class="tag col-6">UI/UX Design</div>
+                        <div class="desc" style="margin-top: 12px; font-size: 20px;">“Jerry” <br>
+                            Tan Xa Lake, Thach That, Hanoi</div>
+                    </a>
+                    <a href="https://www.facebook.com/rabbita1112/posts/pfbid02LF7s6R4sxytiiZfNHQdXrYxrdcZePuw8L1qZy7TjEVLa57YHg68nV8csimxs2asTl"
+                        target="_blank" class="box col-3"
+                        style="padding: 10px 10px; padding-bottom: 20px; border-radius: 30px;">
+                        <div class="card"
+                            style="background-image: url(./asset/images/blog3.png); background-size: cover;"></div>
+                        <div class="tag col-6">AI Application</div>
                         <div class="time" style="margin-top: 12px; display: flex;">
                             <div class="innerName" style="display: flex; margin-right: 35px;">
-                                <div class="icon" style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
                                 <div class="innerText" style="font-size: 16px;">Rabbita</div>
                             </div>
                             <div class="innerTime" style="display: flex;">
-                                <div class="icon" style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
-                                <div class="textText" style="font-size: 16px;">10 Nov, 2023</div>
+                                <div class="textText" style="font-size: 16px;">March 4, 2023</div>
                             </div>
                         </div>
-                        <div class="desc" style="margin-top: 12px; font-size: 24px;">Design Unraveled: Behind the Scenes of UI/UX Magic</div>
-                    </div>
-                    <div class="box col-3" style="padding: 0 10px;">
-                        <div class="card" style="background-image: url(./asset/images/blog4.jpg); background-size: cover;"></div>
-                        <div class="tag col-6">UI/UX Design</div>
+                        <div class="desc" style="margin-top: 12px; font-size: 20px;">Introduction to Adobe Illustrator🫣
+                            <br> 🎨: Cover by Rabbita</div>
+                    </a>
+                    <a href="https://www.facebook.com/rabbita1112/posts/pfbid0egWGzALBzaBCgJ5W7itFnyScbKWSrnFdzJWCVWv4HfTgN9tmXMhWTnoSmuaiPRbAl"
+                        target="_blank" class="box col-3"
+                        style="padding: 10px 10px; padding-bottom: 20px; border-radius: 30px;">
+                        <div class="card"
+                            style="background-image: url(./asset/images/blog4.png); background-size: cover;"></div>
+                        <div class="tag col-6">Photograph</div>
                         <div class="time" style="margin-top: 12px; display: flex;">
                             <div class="innerName" style="display: flex; margin-right: 35px;">
-                                <div class="icon" style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; align-items: center; display: flex; justify-content: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
                                 <div class="innerText" style="font-size: 16px;">Rabbita</div>
                             </div>
                             <div class="innerTime" style="display: flex;">
-                                <div class="icon" style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
+                                <div class="icon"
+                                    style="font-size: 9px; display: flex; justify-content: center; align-items: center; margin-right: 10px; color: var(--color-primary);">
                                     <i class="fa-solid fa-circle"></i>
                                 </div>
-                                <div class="textText" style="font-size: 16px;">10 Nov, 2023</div>
+                                <div class="textText" style="font-size: 16px;">February 15, 2023</div>
                             </div>
                         </div>
-                        <div class="desc" style="margin-top: 12px; font-size: 24px;">Design Unraveled: Behind the Scenes of UI/UX Magic</div>
-                    </div>
+                        <div class="desc" style="margin-top: 12px; font-size: 20px;">“Return to the cradle of Thanh
+                            Xuan” <br>
+                            Thach That High School - Hanoi</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -614,9 +679,11 @@
         <div class="container" style="padding: 15px 71px;">
             <div class="boxOne row">
                 <div class="col-12" style="display: flex; margin-top: 12px;">
-                    <div class="col-10" style="font-size: 64px; font-weight: 500; margin-left: 20px;">Lets Connect there</div>
+                    <div class="col-10" style="font-size: 64px; font-weight: 500; margin-left: 20px;">Lets Connect there
+                    </div>
                     <div class="col-2" style="display: flex; justify-content: end; align-items: center;">
-                        <a href="#" class="btnA" style="background-color: var(--color-primary); border-radius: 60px; padding: 10px 20px; font-size: 26px; color: white; transition: 0.5s; margin-right: 20px;">
+                        <a href="./contact.html" class="btnA"
+                            style="background-color: var(--color-primary); border-radius: 60px; padding: 10px 20px; font-size: 26px; color: white; transition: 0.5s; margin-right: 20px;">
                             Hire me <i style="rotate: -45deg;" class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -639,45 +706,30 @@
                         <div style="margin-top: 30px;" class="social">
                             <main>
                                 <ul class="example-1">
-                                  <li class="icon-content">
-                                    <a
-                                      class="link"
-                                      target="_blank"
-                                      data-social="behance"
-                                      aria-label="Behance"
-                                      href="https://www.behance.net/nguynquangtha?fbclid=IwAR2STRw7k-9fUiHSa18RdV78WuV1IbAmIqqhNn0DWsHgb7KzvxpCqVAylww&"
-                                    >
-                                    <i style="font-size: 26.7px;" class="fa-brands fa-behance"></i>
-                                    </a>
-                                    <div class="tooltip">Behance</div>
-                                  </li>
-                                  <li class="icon-content">
-                                    <a
-                                      class="link"
-                                      target="_blank"
-                                      data-social="tiktok"
-                                      aria-label="Tiktok"
-                                      href="https://www.tiktok.com/@rabbita1112"
-                                    >
-                                    <i style="font-size: 26.7px;" class="fa-brands fa-tiktok"></i>
-                                    </a>
-                                    <div class="tooltip">Tiktok</div>
-                                  </li>
-                                  <li class="icon-content">
-                                    <a
-                                      target="_blank"
-                                      class="link"
-                                      data-social="facebook"
-                                      aria-label="Facebook"
-                                      href="https://www.facebook.com/quangthoa.nguyn"
-                                    >
-                                    <i style="font-size: 26.7px;" class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <div class="tooltip">Facebook</div>
-                                  </li>
+                                    <li class="icon-content">
+                                        <a class="link" target="_blank" data-social="behance" aria-label="Behance"
+                                            href="https://www.behance.net/nguynquangtha?fbclid=IwAR2STRw7k-9fUiHSa18RdV78WuV1IbAmIqqhNn0DWsHgb7KzvxpCqVAylww&">
+                                            <i style="font-size: 26.7px;" class="fa-brands fa-behance"></i>
+                                        </a>
+                                        <div class="tooltip">Behance</div>
+                                    </li>
+                                    <li class="icon-content">
+                                        <a class="link" target="_blank" data-social="tiktok" aria-label="Tiktok"
+                                            href="https://www.tiktok.com/@rabbita1112">
+                                            <i style="font-size: 26.7px;" class="fa-brands fa-tiktok"></i>
+                                        </a>
+                                        <div class="tooltip">Tiktok</div>
+                                    </li>
+                                    <li class="icon-content">
+                                        <a target="_blank" class="link" data-social="facebook" aria-label="Facebook"
+                                            href="https://www.facebook.com/quangthoa.nguyn">
+                                            <i style="font-size: 26.7px;" class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <div class="tooltip">Facebook</div>
+                                    </li>
                                 </ul>
-                              </main>
-                              
+                            </main>
+
                         </div>
                     </div>
                     <div class="col-2" style="display: flex; flex-direction: column; margin-left: 50px;">
@@ -709,7 +761,8 @@
             <div class="row">
                 <div class="col-12" style="display: flex;">
                     <div class="col-6" style="padding-left: 15px;">Copyright©2024 Rabbita. All Rights Reserved.</div>
-                    <div class="col-6" style="display: flex; justify-content: end; padding-right:15px;">User Terms & Conditions | Privacy Policy</div>
+                    <div class="col-6" style="display: flex; justify-content: end; padding-right:15px;">User Terms &
+                        Conditions | Privacy Policy</div>
                 </div>
             </div>
         </div>
@@ -733,16 +786,15 @@
         new WOW().init();
     </script>
 
-<script>
-    $('.product-list').slick({
-        autoplay: true,
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplaySpeed: 2000,
-    });
-
-  </script>
+    <script>
+        $('.product-list').slick({
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplaySpeed: 2000,
+        });
+    </script>
 
 
 </body>

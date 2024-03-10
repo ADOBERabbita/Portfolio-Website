@@ -96,6 +96,33 @@
     font-weight: bold;
     color: white;
 }
+
+@media (max-width: 1200px) {
+    .header .main-nav ul {
+        gap: 2px;
+    }
+    .header .main-nav ul li a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 24px;
+        padding-right: 30px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.header .inner-icon-mobi {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .header .main-nav ul {
+        display: none;
+    }
+    .header .inner-icon-mobi {
+        display: block;
+    }
+}
 /* End Header */
 
 /* Hello */
@@ -165,6 +192,7 @@
     border: 2px solid #444;
     box-shadow: -10px -10px 10px #00AA5B, 0px -10px 10px 0px #00AA5B, 10px -10px 10px #00AA5B, 10px 0 10px #00AA5B, 10px 10px 10px 0px#00AA5B, 0 10px 10px 0px #00AA5B, -10px 10px 10px 0px #00AA5B;
     animation: rot55 0.7s linear infinite;
+    position: absolute; top: 35px; left: 98px; z-index: -990;
 }
 
 .spinnerin {
@@ -482,7 +510,7 @@
     }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 870px) {
     .hello .textLineTwo .spinner{
         left: 296px;
     }
@@ -492,6 +520,68 @@
     .rocket {
         top: -45px;
         left: calc(50% + 240px);
+    }
+
+    .hello .spinner {
+        display: none;
+    }
+
+    .hello .textLineTwo img {
+        left: -60px;
+    }
+}
+
+.hello .innerContent {
+    font-size: 20px;
+    line-height: 24px; 
+    width: 328px; 
+    margin-top: -10px;
+} 
+
+.hello .innerStar {
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.hello .span1 {
+    font-size: 47px; 
+    font-weight: 700;
+}
+
+.hello .span2 {
+    font-size: 20px; 
+    margin-top: -15px;
+}
+
+@media (max-width: 768px) {
+    .hello .textLineTwo img {
+        display: none;
+    }
+
+    .hello .innerContent, .innerStar {
+        font-size: 20px;
+    }
+
+    .hello .span1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hello .rocket {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .hello .iAm {
+        font-size: 80px;
+    }
+    .hello .spinner {
+        width: 40px;
+        height: 40px;
+        top: 35px;
+        left: 80px;
     }
 }
 /* End Hello */
@@ -513,7 +603,7 @@
 .services .content {
     display: flex;
     padding-top: 116px;
-    padding-bottom: 96px;
+    padding-bottom: 50px;
     width: 100%;
 }
 .services .content .innerTitle {
@@ -542,6 +632,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.services .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 71px;
+    padding-bottom: 100px;
+}
+
+.services .inner-box {
+    width: calc(100%/3 - 20px);
+    height: 100%;
+    /* aspect-radio: tỷ lệ width/height của element */
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.services .inner-box img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: ảnh tự co dãn hết width/height mà ko bị vỡ */
+    object-fit: cover;
+    transition: all 0.6s;
+}
+
+.services .inner-box:hover img {
+    transform: scale(1.1);
+}
+
+.services .inner-box .title {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    padding-left: 20PX;
+    padding-bottom: 15px;
+    width: 100%;
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 /* End Services */
 
@@ -984,7 +1117,7 @@
 /* End Discuss */
 
 /* Blog */
-.blog a {
+.blog #btn {
     background-color: var(--color-primary);
     padding: 20px 40px;
     border-radius: 60px;
@@ -996,7 +1129,7 @@
     align-items: center;
     transition: 0.5s;
 }
-.blog a:hover {
+.blog #btn:hover {
     color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.5s;
@@ -1018,11 +1151,12 @@
     margin-top: 12px;
     transition: 0.5s;
 }
-.blog .cardOne {
-    background-image: url(../images/blog1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.blog .box:hover {
+    background-color: #00aa5b2c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 /* End Blog */
 
 /* Footer */
