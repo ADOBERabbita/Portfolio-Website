@@ -663,16 +663,20 @@
     transform: scale(1.1);
 }
 
-.services .inner-box .title {
-    color: white;
+.services .inner-box .inner-content {
     position: absolute;
-    bottom: 0px;
-    padding-left: 20PX;
-    padding-bottom: 15px;
     width: 100%;
-    padding-top: 15px;
-    font-size: 30px;
+    bottom: 0;
+    left: 0;
+}
+
+.services .inner-box .inner-title {
+    font-size: 32px;
     font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
 }
