@@ -11,7 +11,7 @@
     font-size: 64px;
     font-weight: 500;
     padding-left: 71px;
-    color: var(--color-primary);
+    color: var(--color-body);
 }
 .project .btnFill {
     padding: 20px 40px;
