@@ -825,6 +825,13 @@
     width: 603px;
     height: auto;
 }
+
+@media (max-width: 1200px) {
+    .hireMe .container {
+        flex-direction: column;
+        margin-left: 325px;
+    }
+}
 /* End Hire me */
 
 /* Portfolio */
@@ -947,6 +954,7 @@
     display: flex;
     gap: 12px;
     padding-top: 40px;
+    justify-content: center;
 }
 .portfolio .slick .rectangle {
     width: 60px;
@@ -964,6 +972,7 @@
     display: flex;
     gap: 14px;
     padding-top: 40px;
+    justify-content: center;
 }
 .portfolio .innerTag {
     font-size: 20px;
@@ -1001,6 +1010,35 @@
     width: 742px;
     text-align: center;
     padding-top: 24px;
+}
+
+@media (max-width: 1310px) {
+    .portfolio .col-12 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolio .card {
+        margin-left: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .portfolio .card {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .portfolio .card {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio .card {
+        margin-left: -35px;
+    }
 }
 /* End Portfolio */
 
